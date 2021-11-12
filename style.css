@@ -1,0 +1,92 @@
+body{
+    background-color: #212529;
+    color: black;
+
+}
+header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fondo{
+    background-color: black;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-text{
+    font-family: 'Staatliches', cursive; 
+    color: rgb(14, 14, 124);
+}
+.descripcion{
+    font-family: 'Comic Neue', cursive;
+}
+nav{
+    color: white;
+    background-color: rgb(255, 0, 0);
+}
+.ul-li{
+    display: flex;
+    flex-direction: row;
+}
+.li-a{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: white;
+    display: inline-block;
+}
+.indice:hover{
+    background-color: rgb(54, 54, 243);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+}
+.contenido{
+    display:flex;
+    flex-direction: row;    
+}
+.container{
+    display:flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+.numeros{
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    text-decoration: none;    
+}
+.numeros:visited{
+    color: black;
+    text-decoration: none; 
+}
+.numeros:hover{
+    color: red;
+}
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;  
+}
+
+#redes-sociales{
+    display: inline-block;
+}
+.iconos{
+    text-align: center;
+    display: inline-block;
+}
+.logos:visited{
+    color: white;
+}
+.logos:hover{
+    color: red;
+}
