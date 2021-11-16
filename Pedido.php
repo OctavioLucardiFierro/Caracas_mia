@@ -15,8 +15,8 @@
                         
                           <form method="post">
                                 <h1>Solicitar pedido</h1>
-                                <input type="text" name="name" pattern="[a-zA-Z0-9]+" placeholder="Nombre completo">
-                                <input type="text" name="direccion" pattern="[a-zA-Z0-9]+" placeholder="Direccion">
+                                <input type="text" name="name" placeholder="Nombre completo">
+                                <input type="text" name="direccion" placeholder="Direccion">
                                 <input type="text" name="monto" pattern="[0-9]+" required placeholder="Monto">
                                 <input type="submit" name="Solicitar">
                             </form>

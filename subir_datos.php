@@ -18,7 +18,7 @@ if (isset($_POST['Solicitar']))
     
         if ($resultado) {
 	    	?> 
-	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+	    	<h3 class="ok">¡Su pedido esta ciendo procesado!</h3>
            <?php
 	    } else {
 	    	?> 
