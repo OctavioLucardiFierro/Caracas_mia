@@ -22,8 +22,9 @@ section{
 }
 
 .card-text{
-    font-family: 'Staatliches', cursive; 
-    color: rgb(14, 14, 124);
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: rgb(240, 9, 9);
 }
 .descripcion{
     font-family: 'Comic Neue', cursive;
