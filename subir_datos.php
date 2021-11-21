@@ -12,7 +12,7 @@ if (isset($_POST['Solicitar']))
             $Nombre     =trim($_POST['name']);
             $Direccion  =trim($_POST['direccion']);
             $Id_pro     =trim($_POST['id_pro']);
-            $Cantidad   =trim($_POST['Cantidad']);
+         //   $CANT       =trim($_POST['cantidad']);
                 if($Id_pro==1)
                 {
                     $Monto = 180;
@@ -43,17 +43,23 @@ if (isset($_POST['Solicitar']))
                 }
                 }
                 }
-        $consulta="INSERT INTO pedidos(Nombre_Cliente, Dirección_Cliente, Monto, ID_Producto) VALUES ('$Nombre','$Direccion',($Monto*$Cantidad),'$Id_pro')";
+        $consulta="INSERT INTO pedidos(Nombre_Cliente, Dirección_Cliente, Monto, ID_Producto) VALUES ('$Nombre','$Direccion','$Monto','$Id_pro')";
         $resultado= mysqli_query ($conex,$consulta);
     
         if ($resultado) {
 	    	?> 
 	    	<h3 class="ok">¡Su pedido esta siendo procesado!</h3>
-            <H3 class="tiket">
-                Su tiket: <?php 
-                echo $Nombre ?>
+            <h4 class="el_tike">
+                El ticket se le dara junto al pedido.
+                Su ticket:
+                <?php 
+                echo '<p>El cliente es: '.$Nombre.'</p>';
+                echo '<p>Direccion: '.$Direccion.'</p>';
+                echo '<p>Producto Nº: '.$Id_pro.'</p>';
+                echo '<p>El total a pagar: '.$Monto.'$</p>';
+                ?>
 
-            </H3>
+            </h4>
            <?php
 	    } else {
 	    	?> 

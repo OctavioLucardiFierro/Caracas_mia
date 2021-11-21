@@ -102,6 +102,13 @@ footer{
 	background-color: #1e6;
 	color: #fff
 }
+.el_tike{
+    text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: rgb(81, 92, 85);
+	color: #fff
+}
 .bad {
 	text-align: center;
 	width: 100%;

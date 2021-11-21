@@ -17,7 +17,7 @@
                                 <h1>Solicitar pedido</h1>
                                 <input type="text" name="name" placeholder="Nombre completo">
                                 <input type="text" name="id_pro" placeholder="N°del plato">
-                                <input type="text" name="cantidad" placeholder="cantidad de productos">
+                                <!-- <input type="text" name="cantidad" placeholder="cantidad de productos">-->
                                 <input type="text" name="direccion" placeholder="Direccion">
                                 <input type="submit" name="Solicitar">
                                 <a href="Menu-principal.html" class="volver">Volver-al-menu</a>
