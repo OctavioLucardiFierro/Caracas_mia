@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-11-2021 a las 21:08:33
+-- Tiempo de generación: 26-11-2021 a las 18:12:05
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.10
 
@@ -36,6 +36,14 @@ CREATE TABLE `pedidos` (
   `ID_Producto` int(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`ID_Pedido`, `ID_Cliente`, `Nombre_Cliente`, `Dirección_Cliente`, `Monto`, `ID_Producto`) VALUES
+(1, 0, 'Jean Pier', 'rivadavia7113', 400, 0),
+(2, 0, 'Jean Pier Graterol', 'rivadavia7113', 600, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -56,16 +64,30 @@ CREATE TABLE `producto` (
 INSERT INTO `producto` (`ID_Producto`, `Nombre_Producto`, `Precio_Producto`, `Stock`) VALUES
 (1, 'Perro Caliente', 180, 25),
 (2, 'Torta Tres Leches', 350, 15),
-(3, 'Torta Chocolate', 350, 15),
-(4, 'Pabellón', 500, 20),
-(5, 'Arepa Pabellón', 350, 15),
-(6, 'Arepa Pelua', 350, 18),
-(7, 'Arepa Catira', 300, 20),
-(8, 'Empanada Pabellón', 250, 30),
-(9, 'Empanada Pelua', 250, 30),
-(8, 'Empanada Catira', 200, 29),
-(9, 'Ración Tequeños', 390, 24),
-(10, 'Docena Tequeños', 600, 12);
+(3, 'Pabellón', 500, 20),
+(4, 'Arepa', 350, 15),
+(5, 'Empanada', 250, 30),
+(6, 'Tequeños', 600, 12);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD PRIMARY KEY (`ID_Pedido`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `pedidos`
+--
+ALTER TABLE `pedidos`
+  MODIFY `ID_Pedido` int(64) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
